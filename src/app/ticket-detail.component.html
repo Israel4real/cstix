@@ -1,0 +1,14 @@
+<h1>Ticket Detail</h1>
+<div *ngIf="ticket">
+  <h2>{{ticket.email}} details!</h2>
+    <div>
+      <label>id: </label>{{ticket.id}}
+    </div>
+    <div>
+      <label>email: </label><input [(ngModel)]="ticket.email" placeholder="email">
+    </div>
+    <div>
+      <label>summary: </label><textarea>{{ticket.text}}</textarea>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

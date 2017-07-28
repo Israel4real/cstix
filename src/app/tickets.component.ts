@@ -32,6 +32,6 @@ export class TicketsComponent implements OnInit {
   }
 
   gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedTicket.id]);
+    this.router.navigate(['/ticket', this.selectedTicket.id]);
   }
 }

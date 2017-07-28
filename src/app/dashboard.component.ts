@@ -10,7 +10,7 @@ import { TicketService } from './ticket.service';
 })
 export class DashboardComponent implements OnInit {
   
-  tickets: Ticket[] = [];
+  tickets: Ticket[];
 
   constructor(private ticketService: TicketService) { }
 
